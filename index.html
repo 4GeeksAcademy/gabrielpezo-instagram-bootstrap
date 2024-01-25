@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar bg-white">
+      <div class="container-fluid ms-2">
+        <a class="navbar-brand" href="#">
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
+        <div div class="d-flex p-2 bd-highlight">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a new a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <label for="validationTextarea" class="form-label"><strong>Caption:</strong></label>
+                      <textarea class="form-control" id="validationTextarea" placeholder="add the caption of your post here" required></textarea>
+                    </div>
+                    <div>
+                      <button type="button" class="btn btn-light mt-2">
+                        <i class="fa-solid fa-camera"></i>
+                      </button>
+                      <button type="button" class="btn btn-light mt-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="me-3">
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><button class="dropdown-item" type="button">Profile</button></li>
+                  <li><button class="dropdown-item" type="button">Accesibility</button></li>
+                  <li><button class="dropdown-item" type="button">Privacy and data</button></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <ul class="nav nav-pills mb-3 d-flex justify-content-center mt-4" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-tab active btn btn-transparent" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-tab btn btn-transparent" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+            <i class="fa-solid fa-square"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <div class="container text-center">
+            <div class="row row-cols-3">
+              <div class="py-2">
+                <img src="https://i.pinimg.com/originals/e0/ac/c2/e0acc2a16829f6e98423e6213695beb2.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="py-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Gallet_clamshell_600x600_2.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="py-2">
+                <img src="https://t2.ea.ltmcdn.com/es/posts/7/7/2/los_10_animales_mas_rapidos_del_mundo_21277_600.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col py-3">
+                <img src="https://cdn0.ecologiaverde.com/es/posts/9/9/7/curiosidades_cientificas_sobre_el_universo_1799_600_square.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col py-3">
+                <img src="https://celebrateurbanbirds.org/wp-content/uploads/2019/08/TropicalKingbird_MaryMcSparen_ML113068691-600x600.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col py-3">
+                <img src="https://es.wikiarquitectura.com/wp-content/uploads/2017/01/37_yokohama.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col py-2">
+                <img src="https://www.wildsheffield.com/wp-content/uploads/2018/06/red-fox-clive-nichols-6-600x600.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col py-2">
+                <img src="https://www.aromasdelcampo.com/wp-content/uploads/2021/05/AROMAS_DOBI_A1207-600x600.jpg" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col py-2">
+                <img src="https://www.aromasdelcampo.com/wp-content/uploads/2023/09/OKET_A1317_1-600x600.jpg" class="img-fluid img-thumbnail">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div>
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                </div>
+                <div class="col-6">
+                  <div class="border mt-4">
+                    <div class="d-flex justify-content-between px-3 pt-2">
+                      <h3> I love music!</h3>
+                      <p class="pt-2">12/23</p>
+                    </div>
+                    <div class="pb-2">
+                      <img src="https://i.pinimg.com/originals/e0/ac/c2/e0acc2a16829f6e98423e6213695beb2.jpg" class="img-fluid">
+                    </div>
+                    <div class="d-flex align-content-start flex-wrap px-3">
+                      <p  class="text-start mb-1"><strong>10 likes</strong></p>
+                      <p  class="text-start">In this days the music is becoming more and more techn-based. I don't know if it's good or bad.</p>
+                    </div>
+                  </div>
+                  <div class="border mt-5">
+                    <div class="d-flex justify-content-between px-3 pt-2">
+                      <h3> A Relic</h3>
+                      <p class="pt-2">9/23</p>
+                    </div>
+                    <div class="pb-2">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Gallet_clamshell_600x600_2.jpg" class="img-fluid">
+                    </div>
+                    <div class="d-flex align-content-start flex-wrap px-3">
+                      <p  class="text-start mb-1"><strong>25 likes</strong></p>
+                      <p  class="text-start">An old fashioned watch I found in my pa's dresser. I suppose it worth something. At least that's what I hope.</p>
+                    </div>
+                  </div>
+                  <div class="border mt-5 mb-5">
+                    <div class="d-flex justify-content-between px-3 pt-2">
+                      <h3>The fastest</h3>
+                      <p class="pt-2">5/23</p>
+                    </div>
+                    <div class="pb-2">
+                      <img src="https://t2.ea.ltmcdn.com/es/posts/7/7/2/los_10_animales_mas_rapidos_del_mundo_21277_600.jpg" class="img-fluid">
+                    </div>
+                    <div class="d-flex align-content-start flex-wrap px-3">
+                      <p  class="text-start mb-1"><strong>50 likes</strong></p>
+                      <p  class="text-start">If you ask me what's my representative animal, it's the one shown in the picture.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
